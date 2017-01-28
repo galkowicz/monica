@@ -1,3 +1,4 @@
+import router from './router'
 const dom = {};
 
 // Simple selector function
@@ -37,6 +38,15 @@ dom.transitionIn = () => {
     })
 };
 
+dom.transitionOut = route => {
+    // const animatedContainer = $('.section-transition-container');
+    // animatedContainer.classList.remove('fadeIn');
+    // animatedContainer.classList.add('fadeOut');
+    return new Promise(resolve => {
+        router.navigate(route);
+        resolve(true)
+    })
+};
 
 // Take html and render into app space
 dom.renderPage = file => {

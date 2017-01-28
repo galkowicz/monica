@@ -10,7 +10,6 @@ export default () => {
 function init() {
     // dom.transitionIn()
     //     .then(animateChildren())
-    console.log('shoe me contact');
 }
 
 function animateChildren() {

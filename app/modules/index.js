@@ -5,11 +5,10 @@ import home from './Home';
 // import work from './Work';
 import contact from './Contact';
 
-// import nav from './Nav';
+import nav from './Nav';
 
 export default () => {
-    // nav();
-    console.log('router starts');
+    nav();
     router.on({
         // '/about': () => {
         //     about()

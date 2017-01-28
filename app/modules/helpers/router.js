@@ -1,15 +1,15 @@
 import Navigo from 'navigo'
 
 
-const root = null;
+const root = 'http://localhost:9002/';
 const useHash = false;
-const router = new Navigo(root, useHash);
+// let router = new Navigo(root, useHash);
 
-// let router;
-// if (window.location.href === 'https://jbarzegar.github.io/Vanilla-SPA/') {
-//     router = new Navigo('https://jbarzegar.github.io/Vanilla-SPA/')
+let router;
+// if (window.location.href === root) {
+    router = new Navigo(root, useHash);
 // } else {
-//     router = new Navigo();
+//     router = new Navigo(root, useHash);
 //     console.log(router)
 // }
 
