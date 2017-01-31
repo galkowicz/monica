@@ -1,5 +1,5 @@
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
     template: __dirname + '/app/index.html',
     filename: 'index.html',
@@ -7,6 +7,8 @@ const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 });
 
 module.exports = {
+
+    devtool: 'source-map',
 
     entry: __dirname +  '/app/app.js',
     module: {

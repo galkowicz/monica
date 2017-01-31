@@ -1,4 +1,5 @@
 import { dom, $ } from '../helpers/dom'
+import './layouts.scss';
 
 export default () => {
     dom.fetchPage('home.html')
