@@ -1,3 +1,12 @@
-.class1 {
-  background-color: red;
+@import "../../main";
+
+
+@include respond-to(nodesktop) {
+  .class1 {
+    background-color: red;
+  }
+}
+
+.test1 {
+  font-size: 2rem;
 }
