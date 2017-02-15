@@ -1,5 +1,6 @@
 import { dom, $ } from '../helpers/dom'
 import './layouts.scss';
+import '../../css/bars.scss';
 
 export default () => {
     dom.fetchPage('home.html')

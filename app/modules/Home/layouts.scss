@@ -1,12 +1,35 @@
 @import "../../main";
 
-
-@include respond-to(nodesktop) {
-  .class1 {
-    background-color: red;
+.navbar {
+  @include respond-to(nodesktop) {
+    display: none;
   }
 }
-
-.test1 {
-  font-size: 2rem;
+@include respond-to(mobile) {
+  .header {
+    background-color: aqua;
+    padding: 2rem;
+  }
+  .monica-title{
+    font-size: 1rem;
+  }
+  .burger-menu{
+    padding-top: 4rem;
+    padding-right: 1rem;
+    font-size: 3rem;
+  }
+  .monica-title {
+    h1 {
+      margin: 0;
+      padding-top: 4rem;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .sub-title {
+    h6 {
+      margin: 0;
+    }
+  }
 }

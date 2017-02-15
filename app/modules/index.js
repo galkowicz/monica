@@ -10,9 +10,9 @@ import nav from './Nav';
 export default () => {
     nav();
     router.on({
-        // '/about': () => {
-        //     about()
-        // },
+        '/about': () => {
+            about()
+        },
         // '/work': () => {
         //     work()
         // },
